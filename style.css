@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+/* - Almost White: hsl(0, 0%, 98%)
+- Medium Gray: hsl(0, 0%, 41%)
+- Almost Black: hsl(0, 0%, 8%) */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Epilogue', sans-serif;
+    overflow-x: hidden;
+    background: hsl(0, 0%, 98%);
+}
+.introNav {
+    display: flex;
+    padding: 2rem;
+}
+.dropdown a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    transition: 0.5s ease-in-out;
+}
+.dropdown a:hover {
+    color: hsl(0, 0%, 8%);
+}
+.dropdown-content {
+    flex-direction: column;
+    display: none;
+}
+.dropdown-btn a {
+    margin: 0rem 2rem;
+}
+.dropdown-content {
+    background: #fff;
+    padding: 1rem 3rem;
+    box-shadow: 0 0 20px hsla(0, 0%, 41%, 0.504);
+    border-radius: 0.7rem;
+    margin: 1rem 0 0 -100px;
+    position: absolute;
+    z-index: 2;
+}
+.dropdown-content a {
+   margin:  1.5rem 0rem !important;
+   display: block;
+}
+.dropdown-content img {
+    padding: 0 1rem 0 0rem;
+}
+.leftLinks, .rightLinks {
+    display: flex;
+    padding: 0.2rem;
+}
+.d2-content{
+    margin: 1rem 0 0 20px;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 100%;
+}
+.rotated {
+    transform: rotate(180deg);
+}
+.btn {
+    cursor: pointer;
+    border: 3px solid #333;
+    background: transparent;
+    border-radius: 1rem;
+    padding: 1rem 2rem !important;
+    outline: none;
+}
+.btn:hover {
+    background-color: #333;
+    color: #fff !important;
+}
+.rightLinks {
+    margin:  0 0 0 auto;
+}
+.leftLinks {
+    margin-left: 5rem;
+}
+#open, #close {
+    display: none;
+}
+#close {
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    cursor: pointer;
+}
+#open {
+    cursor: pointer;
+    margin: 0 0 0 auto;
+}
+@media screen and (max-width : 1065px){
+    .links {
+        transition: 0.5s;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: #fff;
+        height: 100%;
+        width: 100%;
+        z-index: 9999;
+        display: none;
+        padding-top: 50px;
+    }
+    #open, #close {
+        display: block;
+    }
+    .links, .leftLinks, .rightLinks {
+        flex-direction: column;
+    }
+    .rightLinks, .leftLinks{
+        margin: 0 auto 0 0 !important;
+    }
+    .rightLinks {
+        text-align: center;
+    }
+    .dropdown-btn {
+        margin: 1rem !important;
+    }
+    .dropdown-content {
+        position: relative;
+        padding: 0;
+        margin: 0rem 0 0 70px !important;
+        box-shadow: none;
+    }
+    .btn {
+        padding: 1rem 5rem !important;
+    }
+}
+.font-txt {
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+}
+.heading h1{
+    width: 80%;
+    font-size: 60px;
+    padding-top: 40px;
+}
+.mainBody {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.leftSection {
+    width: 500px;
+}
+.leftSection p{
+    padding: 3rem 0;
+}
+.btn-spec {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff !important;
+    border-radius: 1rem;
+    outline: none;
+    padding: 1rem 2rem !important;
+    transition: 0.5s ease-in-out;
+}
+.btn-spec:hover {
+    border: 0 !important;
+    outline: 3px solid #333;
+    background: transparent;
+    color: #000 !important;
+}
+.footer {
+    padding: 25% 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.sectiondown img{
+    width: 460px;
+    height: 580px;
+    flex-basis: 50%;
+    margin-top: -100px !important;
+    padding-left: 20px;
+}
+.font-txt {
+    line-height: 30px;
+}
+/* 960 1280 */
+/* 
+  1280
+   400
+   880
+*/
+@media screen and (max-width : 1020px) {
+    .mainBody {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .heading h1 {
+        text-align: center;
+        font-size: 30px;
+        width: 100%;
+    }
+    .sectiondown {
+        height: 100% !important;
+        width: 100% !important;
+        margin-top: 300px;
+    }
+    .sectiondown img {
+        margin: 0 !important;
+    }
+    body {
+        overflow-x: hidden !important;
+    }
+}
+@media screen and (min-width : 1020px) {
+    body {
+        overflow: hidden;
+    }
+}
+@media screen and (max-width : 400px) {
+    .sectiondown img {
+        width: 100% !important;
+        height: 100% !important;
+        padding-left: 0;
+    }
+    .sectiondown {
+        margin-top: 10px !important;
+    }
+    .footer img {
+        height: 30px;
+        width: 60px;
+    }
+    .leftSection p {
+        margin: auto;
+    }
+    .leftSection {
+        width: 300px;
+        margin: auto;
+    }
+}

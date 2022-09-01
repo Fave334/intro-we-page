@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery-3.1.1.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="Epilogue/Epilogue-VariableFont_wght.ttf">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<script>
+  $(function () {
+    if (window.matchMedia('(max-width: 1020px)').matches) {
+      $(".sectiondown img").attr("src", "images/image-hero-mobile.png");
+    }
+  });
+</script>
+
+<body>
+  <!-- 
+    Features
+    Company
+    Careers
+    About
+
+    Login
+    Register
+
+    Make remote work
+
+    Get your team in sync, no matter your location. Streamline processes, 
+    create team rituals, and watch productivity soar.
+
+    Learn more 
+  -->
+  <div class="introNav">
+    <div class="logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div id="open">
+      <img src="images/icon-menu.svg" alt="">
+    </div>
+    <div class="links">
+      <div id="close">
+        <img src="images/icon-close-menu.svg" alt="">
+      </div>
+      <div class="leftLinks">
+        <div class="dropdown d1">
+          <div class="dropdown-btn d1-btn">
+            <a href="javascript:void(0)">
+              Features
+              <img src="images/icon-arrow-down.svg" alt="">
+            </a>
+          </div>
+          <div class="dropdown-content d1-content">
+            <a href="javascript:void(0)">
+              <img src="images/icon-todo.svg" alt="">
+              Todo List
+            </a>
+            <a href="javascript:void(0)">
+              <img src="images/icon-calendar.svg" alt="">
+              Calendar
+            </a>
+            <a href="javascript:void(0)">
+              <img src="images/icon-reminders.svg" alt="">
+              Reminders
+            </a>
+            <a href="javascript:void(0)">
+              <img src="images/icon-planning.svg" alt="">
+              Planning
+            </a>
+          </div>
+        </div>
+        <div class="dropdown d2">
+          <div class="dropdown-btn d2-btn">
+            <a href="javascript:void(0)">
+              Company
+              <img src="images/icon-arrow-down.svg" alt="">
+            </a>
+          </div>
+          <div class="dropdown-content d2-content">
+            <a href="javascript:void(0)">History</a>
+            <a href="javascript:void(0)">Our Team</a>
+            <a href="javascript:void(0)">Blog</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-btn">
+            <a href="javascript:void(0)">Careers</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-btn">
+            <a href="javascript:void(0)">About</a>
+          </div>
+        </div>
+      </div>
+      <div class="rightLinks">
+        <div class="dropdown">
+          <div class="dropdown-btn">
+            <a href="javascript:void(0)">Login</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-btn">
+            <a href="javascript:void(0)" class="btn">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mainBody">
+    <div class="sectionUp">
+      <div class="leftSection">
+        <div class="heading">
+          <h1>Make remote work</h1>
+        </div>
+        <p class="font-txt">
+          Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+        </p>
+        <div class="btns">
+          <a class="btn-spec" href="javascript:void(0)">Learn More</a>
+        </div>
+        <div class="footer">
+          <img src="images/client-databiz.svg" alt="client-databiz">
+          <img src="images/client-audiophile.svg" alt="client-audiophile">
+          <img src="images/client-meet.svg" alt="client-meet">
+          <img src="images/client-maker.svg" alt="client-maker">
+        </div>
+      </div>
+    </div>
+    <div class="sectiondown">
+      <img src="images/image-hero-desktop.png" alt="image-hero-desktop">
+    </div>
+  </div>
+</body>
+
+</html>
